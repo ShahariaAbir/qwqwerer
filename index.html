@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Essential Meta Tags -->
+    <meta name="description" content="Get exclusive access to Vanva community. Join now through our verified platform.">
+    <meta name="keywords" content="vanva, join vanva, vanva community, access link">
+    <meta name="author" content="Vanva">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Join Vanva Community - Access Link">
+    <meta property="og:description" content="Get exclusive access to Vanva community. Join now through our verified platform.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourwebsite.com">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Join Vanva Community - Access Link">
+    <meta name="twitter:description" content="Get exclusive access to Vanva community. Join now through our verified platform.">
+    
+    <!-- Verification Meta Tags -->
+    <meta name="google-site-verification" content="your-google-verification-code">
+    <meta name="hilltopads-site-verification" content="your-hilltopads-verification-code">
+    <meta name="6746b6e87b47e2fc9ae40fcafe0dc740af515639" content="6746b6e87b47e2fc9ae40fcafe0dc740af515639" />
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <title>Join Vanva Community - Access Link</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+        }
+        .ad-container {
+            margin: 20px 0;
+            min-height: 250px;
+            background: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .scroll-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        .scroll-icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .button-container {
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+        .access-button {
+            padding: 15px 40px;
+            font-size: 18px;
+            background: linear-gradient(45deg, #2196F3, #21CBF3);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: not-allowed;
+            opacity: 0.5;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(33, 150, 243, 0.3);
+        }
+        .access-button.active {
+            cursor: pointer;
+            opacity: 1;
+            transform: translateY(-2px);
+        }
+        .access-button.active:hover {
+            background: linear-gradient(45deg, #1976D2, #00BCD4);
+            box-shadow: 0 6px 20px rgba(33, 150, 243, 0.4);
+        }
+        .timer {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- HillTopAds Script -->
+    <script>
+        var htscript = document.createElement('script');
+        htscript.src = "//media.hilltopadsmedia.com/YOUR_ZONE_ID"; // Replace with your actual zone ID
+        document.head.appendChild(htscript);
+    </script>
+
+    <!-- Ad Containers -->
+    <div class="ad-container">Ad Space 1</div>
+    <div class="ad-container">Ad Space 2</div>
+
+    <div class="scroll-card">
+        <div class="scroll-icon">⬇️</div>
+        <h2>Scroll Down to Access Your Link</h2>
+        <p>The button will be available after 15 seconds</p>
+    </div>
+
+    <div class="ad-container">Ad Space 3</div>
+    <div class="ad-container">Ad Space 4</div>
+    <div class="ad-container">Ad Space 5</div>
+
+    <div class="button-container">
+        <div class="timer" id="timer">Please wait 15 seconds</div>
+        <button class="access-button" id="accessButton" disabled>Get Access</button>
+    </div>
+
+    <script>
+        let timeLeft = 15;
+        const timerElement = document.getElementById('timer');
+        const button = document.getElementById('accessButton');
+
+        const countdown = setInterval(() => {
+            timeLeft--;
+            timerElement.textContent = `Please wait ${timeLeft} seconds`;
+            
+            if (timeLeft <= 0) {
+                clearInterval(countdown);
+                timerElement.textContent = 'You can now access the link!';
+                button.disabled = false;
+                button.classList.add('active');
+            }
+        }, 1000);
+
+        button.addEventListener('click', () => {
+            if (!button.disabled) {
+                window.location.href = 'YOUR_FINAL_LINK_HERE'; // Replace with your actual link
+            }
+        });
+    </script>
+</body>
+</html>
